@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<title>test</title>
+	</head>
+	<body>
+		<div>hello</div>
+		<script>
+			new Promise((resolve,reject) =>{
+				setTimeout(function(){
+					resolve("hello")
+				},1000)
+			}).then(data =>{
+				console.log(data)
+			},error =>{
+				console.log(error)
+			})
+		</script>
+	</body>
+</html>
